@@ -1,0 +1,45 @@
+body {
+    background-color: aquamarine;
+}
+
+.title {
+    font-family: 'Hubballi';
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.btns {
+    margin:0 auto;
+    display:block;
+    text-align:center; 
+}
+
+.btn1, .btn2, .btn3, .btn4, .btn5 {
+    font-family: 'Hubballi';
+    font-size: 18px;
+    background-color: white;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover {
+    background-color: slategray;
+    color:white;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sketch-board{
+    display:grid;
+    width:500px;
+    height: 500px;
+    padding-bottom: 2rem;
+}

@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet"> 
     <title>Etch-A-Sketch</title>
 </head>
 <body>
-
+    <div class="title">Etch-A-Sketch: Click anywhere to start/stop drawing!</div>
+    <div class="flex-container">
+        <div class="error-message"></div>
+        <div class="content">
+            <div class="sketch-board"></div>
+            <div class="btns">
+                <button class="btn1" onclick="changeColor('black')">Black</button>
+                <button class="btn2" onclick="changeColor('white')">Eraser</button>
+                <button class="btn3" onclick="changeColor('gray')">Gray</button>
+                <button class="btn4" onclick="resetBoard()">Reset</button>
+            </div>
+            <div class="set-size">
+                <input type="text" placeholder="Size of board" value="16" onchange="changeSize(this.value)"/>
+                <button class ="btn5">Set Size (Must be between 4 and 100)</button>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="script.js"></script>
 <link rel="stylesheet" href="style.css">
